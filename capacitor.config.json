@@ -1,0 +1,7 @@
+{
+  "appId": "ionicPush.io.github.suga0828",
+  "appName": "ionicPush",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www"
+}

@@ -11,10 +11,18 @@ Step:
   $ npx cap add android
 
 3.- Create Android project in Firebase (console.firebase.google.com), then:
-  $ mkdir notifications-functions
-  $ cd notifications-functions
   $ npm install -g firebase-tools # if you have firebase tool skip this command
   $ firebase login
   $ firebase init functions # I choose Javascript for functions
+  $ cd functions/
   $ npm i express cors
-  $ code functions/index.js
+  $ code index.js # and write the functions
+
+4.- Deploy Firebase functions:
+  $ firebase deploy
+
+5.- Recive a test notification
+  $ npx cap open android
+
+6.- Sending a test notification:
+  - Go to Firebase > Grow > Cloud Messaging.

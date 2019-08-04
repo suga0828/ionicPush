@@ -4,9 +4,10 @@ const cors = require('cors');
 
 const admin = require('firebase-admin');
 
-// exports.helloWorld = functions.https.onRequest((request, response) => {
-//  response.send("Hello from Firebase!");
-// });
+// Hellow Worlc function
+exports.helloWorld = functions.https.onRequest((request, response) => {
+ response.send("Hello from Firebase!");
+});
 
 const app = express();
 app.use(cors());
